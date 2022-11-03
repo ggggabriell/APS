@@ -1,9 +1,10 @@
-package com.example.apstalvez;
+package com.example.apstalvez.view;
 
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
 
+import com.example.apstalvez.R;
 import com.example.apstalvez.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
