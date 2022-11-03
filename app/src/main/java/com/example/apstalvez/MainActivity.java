@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
                 googleMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds.build(), 100));
 
-                googleMap.setMyLocationEnabled(true);
+//                googleMap.setMyLocationEnabled(true);
 
             });
 
