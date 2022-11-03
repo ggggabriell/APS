@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "268981204658",
+    "project_id": "apss-5fb09",
+    "storage_bucket": "apss-5fb09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268981204658:android:bad0e07f0b97beaed2fbab",
+        "android_client_info": {
+          "package_name": "com.example.apstalvez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268981204658-afutfsuov6tu2v64in1kgno23llgl6pv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWOwoo70vb_0GiIxBjgrNTPQrlOOJnVGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268981204658-afutfsuov6tu2v64in1kgno23llgl6pv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
