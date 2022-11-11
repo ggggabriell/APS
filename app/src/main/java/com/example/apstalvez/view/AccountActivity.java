@@ -17,12 +17,20 @@ public class AccountActivity extends AppCompatActivity {
         binding = ActivityAccountBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        String userEmail = getIntent().getStringExtra("email");
+        if(userEmail != null){
+            binding.tvUserEmail.setText(userEmail);
+        }
 
         binding.btnLogout.setOnClickListener(view -> {
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(this, LoginActivity.class));
             finish();
         });
+
+        binding.tvContact.setOnClickListener(view -> startActivity(new Intent(this, InfoActivity.class)));
+
+        binding.cvContact.setOnClickListener(view -> startActivity(new Intent(this, InfoActivity.class)));
 
     }
 }

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.InfoActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Informações"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horario de funcionamento"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTimeDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvTime"
+        app:layout_constraintStart_toStartOf="@id/tvTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12sp"
+        android:textColor="@color/black"
+        android:text="De segunda a feira a sábado, das 8h às 17h e domingo das 8h às 12h.\nO serviço é gratuito. \nAos feriados das 8 às 12 horas. " />
+
+    <TextView
+        android:id="@+id/tvTimeDetails2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Mais informações sobre os PEVs ligam para o 156, número da Central de Atendimento da Prefeitura."
+        app:layout_constraintTop_toBottomOf="@id/tvTimeDetails"
+        app:layout_constraintStart_toStartOf="@id/tvTimeDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:layout_marginTop="46dp"
+        android:paddingEnd="16dp"/>
+
+
+    <TextView
+        android:id="@+id/tvContactInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para contato direto com a secretaria"
+        app:layout_constraintTop_toBottomOf="@id/tvTimeDetails2"
+        app:layout_constraintStart_toStartOf="@id/tvTimeDetails2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp" />
+    <TextView
+        android:id="@+id/tvContactPhones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+55 (12) 3947-8166 (Paço) \n(12) 3911-6167 (Educação Ambiental) \n3909-4530 (Adm Parque da Cidade)"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvContactInfo"
+        app:layout_constraintStart_toStartOf="@id/tvContactInfo"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/tvLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="https://www.sjc.sp.gov.br/secretarias/urbanismo-e-sustentabilidade/"
+        android:autoLink="web"
+        app:layout_constraintTop_toBottomOf="@id/tvContactPhones"
+        app:layout_constraintStart_toStartOf="@id/tvContactPhones"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="Voltar"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

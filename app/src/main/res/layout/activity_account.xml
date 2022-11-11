@@ -6,19 +6,128 @@
     android:layout_height="match_parent"
     tools:context=".view.AccountActivity">
 
+    <ImageView
+        android:id="@+id/ivUserImage"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="email@alala.com"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/ivUserImage"
+        app:layout_constraintStart_toStartOf="@id/ivUserImage"
+        app:layout_constraintTop_toBottomOf="@id/ivUserImage" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvConfig"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="54dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="@id/ivUserImage"
+        app:layout_constraintTop_toBottomOf="@id/tvUserEmail">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_settings" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Configurações"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/cvConfig"
+        app:layout_constraintStart_toEndOf="@id/cvConfig"
+        app:layout_constraintTop_toTopOf="@id/cvConfig" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHelp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="@id/ivUserImage"
+        app:layout_constraintTop_toBottomOf="@id/cvConfig">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_help" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Ajuda"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/cvHelp"
+        app:layout_constraintStart_toEndOf="@id/cvHelp"
+        app:layout_constraintTop_toTopOf="@id/cvHelp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvContact"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="@id/ivUserImage"
+        app:layout_constraintTop_toBottomOf="@id/cvHelp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_contact" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Contato"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/cvContact"
+        app:layout_constraintStart_toEndOf="@id/cvContact"
+        app:layout_constraintTop_toTopOf="@id/cvContact" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLogout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="32dp"
         android:backgroundTint="@color/red"
         android:drawableLeft="@drawable/ic_logout"
         android:drawableTint="@color/white"
-        android:layout_marginHorizontal="16dp"
-        android:text="Logout"
+        android:text="Sair"
         android:textAlignment="textStart"
         android:textAllCaps="false"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

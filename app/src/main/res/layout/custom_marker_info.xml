@@ -27,5 +27,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traçar rota"
+        android:textStyle="bold"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:paddingHorizontal="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

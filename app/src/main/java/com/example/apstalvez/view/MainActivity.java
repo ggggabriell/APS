@@ -1,5 +1,6 @@
 package com.example.apstalvez.view;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -42,12 +43,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
+        mAuth = FirebaseAuth.getInstance();
         binding.ivUser.setOnClickListener(view -> {
-            startActivity(new Intent(this, AccountActivity.class));
+            Intent intent = new Intent(this, AccountActivity.class);
+            intent.putExtra("email", mAuth.getCurrentUser().getEmail());
+            startActivity(intent);
         });
         getDataFirebase();
 
+
+        binding.ivHelp.setOnClickListener(view -> {
+            startActivity(new Intent(this, InfoActivity.class));
+        });
     }
 
     @Override
